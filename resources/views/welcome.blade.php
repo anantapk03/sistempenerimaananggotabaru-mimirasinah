@@ -48,13 +48,13 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Jadwal Acara</a>
+              <a class="nav-link" href="jadwalacarasanggar">Jadwal Acara</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Article</a>
             </li>
             <li class="nav-item" >
-              <a class="nav-link" href="#">Masuk</a>
+              <a class="nav-link" href="login">Masuk</a>
             </li>
           </ul>
         </div>
@@ -72,14 +72,14 @@
         <div class="carousel-item active" data-bs-interval="2500" style="animation-delay: 2s">
           <img src="{{url('assets/dashboard_.png')}}" class="d-block w-100" alt="...">
           <div class="position-absolute top-50 start-50 translate-middle">
-            <h2 style="text-align: center; color: white; font-size: 48px; font-family: 'Times New Roman', Times, serif;" >Selamat Datang di Website Sanggar Tari Mimi Rasinah</h2>
+            <h2 style="text-align: center; color: white; font-size: 48px; font-family: 'Times New Roman', Times, serif;" >Selamat Datang di Website Sanggar Tari Topeng Mimi Rasinah</h2>
             <center><a href="#" class="btn btn-primary" style="font-size: 25px; font-family: 'Times New Roman', Times, serif;">Get Started</a></center>
           </div>
         </div>
         <div class="carousel-item active" data-bs-interval="2500">
           <img src="{{url('assets/dashboard_2.jpg')}}" class="d-block w-100" alt="..."data-mdb-animation="slide-in-right">
           <div class="position-absolute top-50 start-50 translate-middle">
-            <h2 style="text-align: center; color: white; font-size: 48px; font-family: 'Times New Roman', Times, serif;" >Selamat Datang di Website Sanggar Tari Mimi Rasinah</h2>
+            <h2 style="text-align: center; color: white; font-size: 48px; font-family: 'Times New Roman', Times, serif;" >Selamat Datang di Website Sanggar Tari Topeng Mimi Rasinah</h2>
             <center><a href="#" class="btn btn-primary" style="font-size: 25px; font-family: 'Times New Roman', Times, serif;">Get Started</a></center>
           </div>
         </div>  
@@ -156,16 +156,14 @@
           <h5 class="navbrandtxt">Sanggar Tari Topeng Mimi Rasinah</h5>
           <img src="{{url('assets/logo_sanggartari.png')}}" alt="" class="rounded" style="height: 100px;">
           <p  class="navbrandtxt" style="font-size: 16px;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-            voluptatem veniam, est atque cumque eum delectus sint!
+            JLN PANDAWA II No 1 RT 08/ RW 04 NO 1, Pekandangan, Kec. Indramayu, Kabupaten Indramayu, Jawa Barat 45216
           </p>
         </div>
         <!--Grid column-->
   
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
+          <h5 class="text-uppercase">Contact Us</h5>
   
           <ul class="list-unstyled mb-0">
             <li>
@@ -216,8 +214,6 @@
     </div>
     <!-- Copyright -->
   </footer>
-
-  
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
