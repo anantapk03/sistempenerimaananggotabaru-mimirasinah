@@ -51,7 +51,7 @@
               <a class="nav-link" href="jadwalacarasanggar">Jadwal Acara</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Article</a>
+              <a class="nav-link" href="article">Article</a>
             </li>
             <li class="nav-item" >
               <a class="nav-link" href="login">Masuk</a>
@@ -95,13 +95,12 @@
     </div>
   </div>
   <!-- CONTENT GET STARTERD -->
-
   <div class="container-fluid">
     <div class="card mb-3 mt-2">
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <img src="{{url('assets/mimi-rasinah-1.jpg')}}" class="strat-50">
+            <img src="{{url('assets/mimi-rasinah-1.jpg')}}">
           </div>
           <div class="col col-lg-9">
             <H1 style="font-family: 'Times New Roman', Times, serif; align: center; font-size:35px">Tentang Sanggar Tari Topeng Mimi Rasinah</H1> <br>
@@ -140,6 +139,41 @@
           </table>
         </div>
         
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-3 mb-3">
+    <div class="row">
+      <div class="col">
+        <div class="card mb-3">
+          <img src="assets/dashboard-gambar.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="" style="text-decoration:none; color:black"><h4 class="card-title">Festival Hari Jadi ke-496 Indramayu, Sanggar Tari Mimi Rasinah Ikut Serta Memeriahkan Acara</h4></a>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3">
+          <img src="assets/dashboard-gambar.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="" style="text-decoration:none; color:black"><h4 class="card-title">Festival Hari Jadi ke-496 Indramayu, Sanggar Tari Mimi Rasinah Ikut Serta Memeriahkan Acara</h4></a>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3">
+          <img src="assets/dashboard-gambar.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="" style="text-decoration:none; color:black"><h4 class="card-title">Festival Hari Jadi ke-496 Indramayu, Sanggar Tari Mimi Rasinah Ikut Serta Memeriahkan Acara</h4></a>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

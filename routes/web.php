@@ -28,3 +28,7 @@ Route::get('/jadwalacarasanggar', function () {
 Route::get('/daftar', function () {
     return view('tamu/daftar');
 });
+
+Route::get('/article', function () {
+    return view('tamu/article');
+});

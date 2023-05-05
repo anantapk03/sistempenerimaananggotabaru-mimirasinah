@@ -8,17 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="icon" href="{{url('assets/logo_sanggartari.png')}}" type="image/x-icon">
 </head>
-<body>
+<body style="background-image: url(assets/dashboard_2.jpg)">
     <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <div class="card my-5">
+      <div class="col-md-6 offset-md-3" >
+        <div class="card my-5" >
           <form class="card-body cardbody-color p-lg-5">
-
             <div class="text-center">
               <a href="/"><img src="{{"assets/logo_sanggartari.png"}}" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
                 width="200px" alt="profile"></a>
             </div>
-
             <div class="mb-3">
               <input type="text" class="form-control" id="email" aria-describedby="emailHelp"
                 placeholder="Masukan alamat email anda">

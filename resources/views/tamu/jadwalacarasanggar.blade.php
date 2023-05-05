@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="{{url('assets/logo_sanggartari.png')}}" type="image/x-icon">
-    <title>Welcome To Sanggar Tari Topeng Mimi Rasinah</title>
     <style>
       .navbrandtxt{
         font-family: '?????';
@@ -49,10 +48,10 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Jadwal Acara</a>
+                  <a class="nav-link" href="jadwalacarasanggar">Jadwal Acara</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Article</a>
+                  <a class="nav-link" href="article">Article</a>
                 </li>
                 <li class="nav-item" >
                   <a class="nav-link" href="login">Masuk</a>
@@ -170,7 +169,7 @@
     </footer>
   
     <!--End Of Footer-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
 </html>
