@@ -14,13 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('tamu/welcome');
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('tamu/login');
 });
 
 Route::get('/jadwalacarasanggar', function () {
-    return view('jadwalacarasanggar');
+    return view('tamu/jadwalacarasanggar');
+});
+
+Route::get('/daftar', function () {
+    return view('tamu/daftar');
 });

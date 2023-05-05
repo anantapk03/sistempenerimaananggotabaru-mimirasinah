@@ -146,7 +146,7 @@
 
   
 <!-- Footer -->
-  <footer class="bg-secondary text-white text-center text-lg-start" class="top-0">
+  <footer class="bg-secondary text-white text-center text-lg-start">
     <!-- Grid container -->
     <div class="container p-4">
       <!--Grid row-->
