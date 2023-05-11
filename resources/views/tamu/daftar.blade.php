@@ -18,6 +18,7 @@
     <title>Daftar Sebagai Anggota</title>
 </head>
 <body>
+  <!--Header (NAVBAR)-->
   <header>
     <nav class="navbar navbar-expand-lg bg-danger fixed-top">
       <div class="container-fluid">
@@ -59,8 +60,120 @@
         </div>
       </div>
     </nav>
+    <br><br>
   </header>
+  <!--Content-->
+  <div class="container-fluid mt-5">
+    <div class="row mb-3">
+      <div class="col mt-2">
+        <img src="{{url('assets/daftar_2.jpg')}}" alt="" class="img img-fluid">
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <center><h4 style="font-family: 'Times New Roman', Times, serif"> DAFTAR SEBAGAI ANGGOTA</h4></center>
+          </div>
+          <div class="card-body">
+            <form action="#" method="POST">
+              
+                <label>Nama</label>
+                <input type="text" name="nama" id="nama" class="form-control" placeholder="Masukan Nama Lengkap Anda">
+                <label for="inpuImg">Masukan foto 4X6</label>
+                <input type="file" name="" id="inputImg" class="form-control">
+                <label>Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Masukan Alamat Email anda">
+              <label>Nomor Whatsapp</label>
+              <input type="text" name="whatsapp" id="no_wa" class="form-control" placeholder="Masukan Nomor Whatsapp Anda" onkeypress="return hanyaAngka(event)">
+              <label>Alamat</label>
+              <textarea type="text" name="whatsapp" id="no_wa" class="form-control" placeholder="Masukan Alamat Lengkap Anda"> </textarea>
+              <label for="inputPw">Kata Sandi</label>
+              <input type="text" name="pass" id="InputPW" class="form-control">
+              <br><center><button type="submit" class="btn btn-primary w-25" >Daftar</button></center>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-secondary text-white text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="navbrandtxt">Sanggar Tari Topeng Mimi Rasinah</h5>
+          <img src="{{url('assets/logo_sanggartari.png')}}" alt="" class="rounded" style="height: 100px;">
+          <p  class="navbrandtxt" style="font-size: 16px;">
+            JLN PANDAWA II No 1 RT 08/ RW 04 NO 1, Pekandangan, Kec. Indramayu, Kabupaten Indramayu, Jawa Barat 45216
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact Us</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  <script>
+    function hanyaAngka(event) {
+        var angka = (event.which) ? event.which : event.keyCode
+        if (angka != 46 && angka > 31 && (angka < 48 || angka > 57))
+            return false;
+        return true;
+    }
+    </script>
 </body>
 </html>

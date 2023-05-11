@@ -32,3 +32,7 @@ Route::get('/daftar', function () {
 Route::get('/article', function () {
     return view('tamu/article');
 });
+
+Route::get('admin/dashboard', function () {
+    return view('admin\dashboardAdm');
+});
