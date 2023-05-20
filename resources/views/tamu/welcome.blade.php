@@ -37,24 +37,24 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galeri</a>
               <ul class="dropdown-menu ">
                 <li>
-                  <a href="#" class="dropdown-item">Latihan Sanggar Tari</a>
+                  <a href="{{route('galerilatihan')}}" class="dropdown-item">Latihan Sanggar Tari</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item">Acara Besar</a>
+                  <a href="{{route('galeriacarabesar')}}" class="dropdown-item">Acara Besar</a>
                 </li>
                 <li>
-                  <a href="#" class="dropdown-item">Asset Sanggar</a>
+                  <a href="{{route('assetsanggar')}}" class="dropdown-item">Asset Sanggar</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="jadwalacarasanggar">Jadwal Acara</a>
+              <a class="nav-link" href="{{route('jadwalacara')}}">Jadwal Acara</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="article">Article</a>
+              <a class="nav-link" href="{{route('showarticle')}}">Article</a>
             </li>
             <li class="nav-item" >
-              <a class="nav-link" href="login">Masuk</a>
+              <a class="nav-link" href="{{route('showlogin')}}">Masuk</a>
             </li>
           </ul>
         </div>

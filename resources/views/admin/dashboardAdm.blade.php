@@ -9,5 +9,7 @@
 </head>
 <body>
     <H1>Hallo, Admin</H1>
+
+    <a href="logout">Keluar bang</a>
 </body>
 </html>

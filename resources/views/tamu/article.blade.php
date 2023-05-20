@@ -74,7 +74,7 @@
                         tari istana kemudian berubah fungsi menjadi tari rakyat.
                     </p>
                     <br>
-                    <a href="#" class="btn btn-info mb-3" class="position-absolute bottom-0 end-0">Baca Selengkapnya</a>
+                    <a href="{{route('readarticle')}}" class="btn btn-info mb-3" class="position-absolute bottom-0 end-0">Baca Selengkapnya</a>
                 </div>
             </div>
         </div>

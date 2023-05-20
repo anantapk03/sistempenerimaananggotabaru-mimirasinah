@@ -12,21 +12,31 @@
     <div class="row">
       <div class="col-md-6 offset-md-3" >
         <div class="card my-5" >
-          <form class="card-body cardbody-color p-lg-5">
-            <div class="text-center">
-              <a href="/"><img src="{{"assets/logo_sanggartari.png"}}" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
-                width="200px" alt="profile"></a>
-            </div>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="email" aria-describedby="emailHelp"
-                placeholder="Masukan alamat email anda">
-            </div>
-            <div class="mb-3">
-              <input type="password" class="form-control" id="password" placeholder="password">
-            </div>
-            <div class="text-center"><button type="submit" class="btn btn-primary px-5 mb-5 sm-3">Masuk</button></div>
-            <div id="emailHelp" class="form-text text-center mb-5 text-dark">Belum memiliki akun? <a href="daftar" class="text-dark fw-bold">Daftar</a>
-            </div>
+          @if ($errors->any())
+              <div class="alert alert-danger">
+                <ul>
+                  @foreach ($errors->all() as $item)
+                    <li>{{$item}}</li>                      
+                  @endforeach
+                </ul>
+              </div>
+          @endif
+          <form class="card-body cardbody-color p-lg-5" method="post" action="{{route('loginaksi')}}">
+              {{ csrf_field() }}
+              <div class="text-center">
+                <a href="/"><img src="{{"assets/logo_sanggartari.png"}}" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                  width="200px" alt="profile"></a>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="email" aria-describedby="emailHelp" name="email"
+                  placeholder="Masukan alamat email anda">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" id="password" placeholder="password" name="password">
+              </div>
+              <div class="text-center"><button type="submit" class="btn btn-primary px-5 mb-5 sm-3">Masuk</button></div>
+              <div id="emailHelp" class="form-text text-center mb-5 text-dark">Belum memiliki akun? <a href="daftar" class="text-dark fw-bold">Daftar</a>
+              </div>
           </form>
         </div>
 
