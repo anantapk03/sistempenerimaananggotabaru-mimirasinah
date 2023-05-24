@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PetugasController;
 use App\Http\Controllers\TamuController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
@@ -27,8 +28,16 @@ Route::get('/latihansanggar', [TamuController::class, 'showgalerilatihan'])->nam
 Route::get('/acarabesar', [TamuController::class, 'showgaleriacarabesar'])->name('galeriacarabesar');
 Route::get('/assetsanggar', [TamuController::class, 'showassetsanggar'])->name('assetsanggar');
 Route::post('/dashboardAdm', [LoginController::class, 'login'])->name('loginaksi');
-Route::get('/',[LoginController::class, 'logout'])->name('logout');
- 
+Route::get('/logout',[LoginController::class, 'logout'])->name('logout');
+
+Route::get('/admin/adminDashboard', function(){
+    return view('admin.dashboardAdm');
+});
+
+Route::get('/admin/datapetugassanggar',[AdminController::class, 'getviewdataPetugassanggar'])->name('datapetugassanggar');
+Route::get('/admin/tambahpetugassanggar',[AdminController::class, 'formaddPetugas'])->name('formaddPetugas');
+Route::post('/admin/insertdata',[AdminController::class, 'insertdata'])->name('insertdata');
+Route::get('/admin/tampildata/{id}',[AdminController::class, 'menampilkan_data'])->name('tampildata');
 
 // Route::get('/', [TamuController::class, 'index']);
 // Route::get('/login',[LoginController::class,'index']);
