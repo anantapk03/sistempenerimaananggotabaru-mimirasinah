@@ -201,16 +201,16 @@
   
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="https://wa.me/6281546725053" class="text-white">WhatsApp</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
+              <a href="https://instagram.com/aerlirasinah?igshid=NTc4MTIwNjQ2YQ==" class="text-white">Instagram</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 3</a>
+              <a href="https://web.facebook.com/aerlirasinah.topeng" class="text-white">Facebook</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="text-white">Gmail</a>
             </li>
           </ul>
         </div>
@@ -222,16 +222,16 @@
   
           <ul class="list-unstyled">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="https://www.youtube.com/@AerliRasinah" class="text-white">Youtube</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
+              <a href="https://instagram.com/aerlirasinah?igshid=NTc4MTIwNjQ2YQ==" class="text-white">Instagram</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 3</a>
+              <a href="https://web.facebook.com/aerlirasinah.topeng" class="text-white">Facebook</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="text-white">Gmail</a>
             </li>
           </ul>
         </div>
@@ -243,8 +243,8 @@
   
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      © 2023 Copyright:
+      <a class="text-white" href="#">Proyek 1 : Kelompok 3 D4RPL 2B</a>
     </div>
     <!-- Copyright -->
   </footer>

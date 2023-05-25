@@ -27,7 +27,7 @@ Route::get('/latihansanggar', [TamuController::class, 'showgalerilatihan'])->nam
 Route::get('/acarabesar', [TamuController::class, 'showgaleriacarabesar'])->name('galeriacarabesar');
 Route::get('/assetsanggar', [TamuController::class, 'showassetsanggar'])->name('assetsanggar');
 Route::post('/dashboardAdm', [LoginController::class, 'login'])->name('loginaksi');
-Route::get('/',[LoginController::class, 'logout'])->name('logout');
+Route::get('/Logout',[LoginController::class, 'logout'])->name('logout');
  
 
 // Route::get('/', [TamuController::class, 'index']);
