@@ -28,12 +28,7 @@ Route::get('/latihansanggar', [TamuController::class, 'showgalerilatihan'])->nam
 Route::get('/acarabesar', [TamuController::class, 'showgaleriacarabesar'])->name('galeriacarabesar');
 Route::get('/assetsanggar', [TamuController::class, 'showassetsanggar'])->name('assetsanggar');
 Route::post('/dashboardAdm', [LoginController::class, 'login'])->name('loginaksi');
-<<<<<<< HEAD
-Route::get('/Logout',[LoginController::class, 'logout'])->name('logout');
- 
-=======
 Route::get('/logout',[LoginController::class, 'logout'])->name('logout');
->>>>>>> a5fb68cdb395a459d7b26bc5a133a2c382f12b38
 
 Route::get('/admin/adminDashboard', function(){
     return view('admin.dashboardAdm');
