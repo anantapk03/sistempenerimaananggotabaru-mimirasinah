@@ -18,7 +18,7 @@ class CreatePetugasSanggarsTable extends Migration
             $table->string('nama');
             $table->string('alamat');
             $table->bigInteger('no_wa');
-            $table->binary('image');
+            $table->string('image');
             $table->string('password')-> default(Hash::make('123456789'));
             $table->timestamps();
         });

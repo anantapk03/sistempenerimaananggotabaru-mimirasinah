@@ -37,8 +37,9 @@ Route::get('/admin/adminDashboard', function(){
 Route::get('/admin/datapetugassanggar',[AdminController::class, 'getviewdataPetugassanggar'])->name('datapetugassanggar');
 Route::get('/admin/tambahpetugassanggar',[AdminController::class, 'formaddPetugas'])->name('formaddPetugas');
 Route::post('/admin/insertdata',[AdminController::class, 'insertdata'])->name('insertdata');
-Route::get('/admin/tampildata/{id}',[AdminController::class, 'menampilkan_data'])->name('tampildata');
-
+Route::get('/admin/tampildata/{email}',[AdminController::class, 'menampilkan_data'])->name('tampildata');
+Route::post('/admin/updatedata/{email}',[AdminController::class, 'edit_data'])->name('updatedata');
+Route::get('/admin/delete/{email}',[AdminController::class, 'delete_data'])->name('deletedata');
 // Route::get('/', [TamuController::class, 'index']);
 // Route::get('/login',[LoginController::class,'index']);
 

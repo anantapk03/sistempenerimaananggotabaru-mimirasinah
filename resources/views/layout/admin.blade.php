@@ -193,5 +193,30 @@
 <script src="{{asset('template/dist/js/pages/dashboard.js')}}"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+<script>
+  $('.delete').click(function(){
+    var petugasemail = $(this).attr('data-id');
+    Swal.fire({
+      title: 'Apakah anda yakin?',
+      text: "Kamu akan menghapus data dengan email "+petugasemail+" ",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Hapus!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location="/admin/delete/"+petugasemail+""
+        Swal.fire(
+          'Berhasil!!',
+          'Data Berhasil Dihapus',
+          'success'
+        )
+      }
+    })
+  })
+</script>
 </html>

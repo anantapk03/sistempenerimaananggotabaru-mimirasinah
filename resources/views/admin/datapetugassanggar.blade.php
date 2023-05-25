@@ -32,6 +32,7 @@
                     <thead>
                     <tr>
                       <th>Email</th>
+                      <th>Gambar</th>
                       <th>Nama</th>
                       <th>Alamat</th>
                       <th>Tanggal Bergbung</th>
@@ -42,11 +43,14 @@
                       @foreach ($data as $row)
                       <tr>
                         <td>{{$row->email}}</td>  
+                        <td>
+                          <img src="{{asset('fotopetugassanggar/'.$row->image)}}" alt="" style="width: 80px">
+                        </td>
                         <td> {{$row->nama}} </td>
                         <td>{{$row->alamat}}</td>
-                        <td>{{$row->created_at->format('D M Y')}}</td>
+                        <td>{{$row->created_at}}</td>
                         <td> 
-                          <a href="#" class="btn btn-danger btn-sm"><ion-icon name="trash-outline"></ion-icon> <!--outline-->Hapus</a>
+                          <a href="#" class="btn btn-danger btn-sm delete" data-id="{{$row->email}}"><ion-icon name="trash-outline"></ion-icon> <!--outline-->Hapus</a>
                           <a href="/admin/tampildata/{{$row->email}}" class="btn btn-warning btn-sm"><ion-icon name="create-outline"></ion-icon>Edit</a>
                         </td>
                       </tr>
