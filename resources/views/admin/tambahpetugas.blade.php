@@ -15,7 +15,7 @@
               <div class="card-body">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nama</label>
-                    <input type="text" class="form-control" id="nama" placeholder="Masukan Nama lengkap anda" name="nama">
+                    <input type="text" class="form-control" id="nama" placeholder="Masukan Nama lengkap Anda" name="nama">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Alamat Email</label>
@@ -27,7 +27,7 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputEmail1" placeholder="Nomor Whatsapp Aktif">
+                    <input type="password" name="password" class="form-control" id="exampleInputEmail1" placeholder="Masukkan Password Anda">
                   </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Alamat</label>

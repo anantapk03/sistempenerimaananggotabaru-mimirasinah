@@ -61,6 +61,7 @@ class AdminController extends Controller
                         'email'=>$request->email,
                         'password'=>bcrypt($request->password)
                     ]);
+        
         return redirect()->route('datapetugassanggar')->with('success','Data Berhasil Diupdate');
     }
 
