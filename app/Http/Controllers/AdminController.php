@@ -56,11 +56,11 @@ class AdminController extends Controller
                     ->update([
                         'nama'=>$request->nama,
                         'alamat'=>$request->alamat,
-                        'image'=>$request->image,
                         'no_wa'=>$request->no_wa,
                         'email'=>$request->email,
                         'password'=>bcrypt($request->password)
                     ]);
+                    
         return redirect()->route('datapetugassanggar')->with('success','Data Berhasil Diupdate');
     }
 
