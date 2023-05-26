@@ -82,7 +82,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="adminDashboard" class="nav-link active">
+            <a href="adminDashboard" class="nav-link {{Request::is('admin/adminDashboard') ? 'active' : ''}}">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -90,7 +90,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="datapetugassanggar" class="nav-link">
+            <a href="datapetugassanggar" class="nav-link {{Request::is('admin/datapetugassanggar') ? 'active' : ''}}">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Data Petugas Sanggar
