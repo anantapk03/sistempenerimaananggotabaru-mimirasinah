@@ -89,13 +89,46 @@
               </p>
             </a>
           </li>
+<<<<<<< HEAD
           <li class="nav-item">
             <a href="datapetugassanggar" class="nav-link {{Request::is('admin/datapetugassanggar') ? 'active' : ''}}">
               <i class="nav-icon fas fa-th"></i>
+=======
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+>>>>>>> bcf89a55bfda15552dc9d389481c602736741c5a
               <p>
-                Data Petugas Sanggar
+                Users
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="datapetugassanggar" class="nav-link">
+                  <i class="nav-icon fas fa-user"></i>
+                  <p>
+                    Data Petugas Sanggar
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{'/admin/dataanggota'}}" class="nav-link">
+                  <i class="nav-icon fas fa-user"></i>
+                  <p>
+                    Data Anggota
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-user"></i>
+                  <p>
+                    Data Admin
+                  </p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AnggotaController;
 use App\Http\Controllers\PetugasController;
 use App\Http\Controllers\TamuController;
 use Illuminate\Support\Facades\Route;
@@ -40,6 +41,9 @@ Route::post('/admin/insertdata',[AdminController::class, 'insertdata'])->name('i
 Route::get('/admin/tampildata/{email}',[AdminController::class, 'menampilkan_data'])->name('tampildata');
 Route::post('/admin/updatedata/{email}',[AdminController::class, 'edit_data'])->name('updatedata');
 Route::get('/admin/delete/{email}',[AdminController::class, 'delete_data'])->name('deletedata');
+
+
+Route::get('/admin/dataanggota',[AnggotaController::class, 'viewDataanggota'])->name('viewDataanggota');
 // Route::get('/', [TamuController::class, 'index']);
 // Route::get('/login',[LoginController::class,'index']);
 
