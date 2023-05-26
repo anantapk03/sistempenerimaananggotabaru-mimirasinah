@@ -27,13 +27,13 @@
                   </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Alamat</label>
-                    <textarea name="alamat" value="{{$data->alamat}}" name="alamat" id="alamat" cols="30" rows="10" type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Alamat Rumah anda"></textarea>
+                   <input name="alamat" value="{{$data->alamat}}" name="alamat" id="exampleInputEmail1" cols="30" rows="10" type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Alamat Rumah anda" >
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Foto</label>
                   <div class="input-group">
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="gambar" name="image" value="{{$data->image}}">
+                      <input type="file" class="custom-file-input" id="gambar" name="image" value="{{$data->image}}" disabled>
                       <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                     </div>
                     <div class="input-group-append">
