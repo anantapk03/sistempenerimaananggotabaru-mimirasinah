@@ -35,7 +35,7 @@
                       <th>Gambar</th>
                       <th>Nama</th>
                       <th>Alamat</th>
-                      <th>Tanggal Bergbung</th>
+                      <th>Tanggal Bergabung</th>
                       <th>Aksi</th>
                     </tr>
                     </thead>
