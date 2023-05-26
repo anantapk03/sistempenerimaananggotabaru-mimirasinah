@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Admin;
 use App\Models\PetugasSanggar;
 use Hash;
 use Illuminate\Http\Request;
@@ -67,6 +68,11 @@ class AdminController extends Controller
     function delete_data($email){
             DB::table('petugas_sanggars')->where('email', $email)->delete();
             return redirect()->route('datapetugassanggar')->with('success','Data Berhasil Dihapus');
+        }
+
+        function menampilkan_dataadmin(){
+            $data = Admin::all();
+            return view('admin.dataadmin',compact('data'));
         }
 
 }

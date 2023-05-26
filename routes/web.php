@@ -44,6 +44,7 @@ Route::get('/admin/delete/{email}',[AdminController::class, 'delete_data'])->nam
 
 
 Route::get('/admin/dataanggota',[AnggotaController::class, 'viewDataanggota'])->name('viewDataanggota');
+Route::get('/admin/dataadmin',[AdminController::class, 'menampilkan_dataadmin'])->name('menampilkan_dataadmin');
 // Route::get('/', [TamuController::class, 'index']);
 // Route::get('/login',[LoginController::class,'index']);
 
