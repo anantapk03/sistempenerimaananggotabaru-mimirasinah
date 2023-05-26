@@ -82,22 +82,16 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="adminDashboard" class="nav-link {{Request::is('admin/adminDashboard') ? 'active' : ''}}">
+            <a href="adminDashboard" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
               </p>
             </a>
           </li>
-<<<<<<< HEAD
-          <li class="nav-item">
-            <a href="datapetugassanggar" class="nav-link {{Request::is('admin/datapetugassanggar') ? 'active' : ''}}">
-              <i class="nav-icon fas fa-th"></i>
-=======
           <li class="nav-item menu-open">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
->>>>>>> bcf89a55bfda15552dc9d389481c602736741c5a
               <p>
                 Users
                 <i class="right fas fa-angle-left"></i>
