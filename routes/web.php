@@ -45,6 +45,15 @@ Route::get('/admin/delete/{email}',[AdminController::class, 'delete_data'])->nam
 
 Route::get('/admin/dataanggota',[AnggotaController::class, 'viewDataanggota'])->name('viewDataanggota');
 Route::get('/admin/dataadmin',[AdminController::class, 'menampilkan_dataadmin'])->name('menampilkan_dataadmin');
+Route::get('/admin/tampildataanggota/{email}',[AnggotaController::class, 'viewupdatepass'])->name('viewupadatepass');
+Route::post('/admin/updatepassanggota/{email}',[AnggotaController::class, 'updatepassword'])->name('updatepassword');
+Route::get('/admin/delete_anggota/{email}',[AnggotaController::class, 'deleteAnggota'])->name('deleteAnggota');
+
+
+//Daftar Sebagai Anggota
+Route::get('/daftar',[AnggotaController::class, 'viewRegister'])->name('registerAnggota');
+Route::post('/register',[AnggotaController::class, 'registerAnggota'])->name('register');
+
 // Route::get('/', [TamuController::class, 'index']);
 // Route::get('/login',[LoginController::class,'index']);
 

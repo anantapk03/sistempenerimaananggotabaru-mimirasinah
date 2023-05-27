@@ -81,8 +81,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="adminDashboard" class="nav-link active">
+          <li class="nav-item">
+            <a href="adminDashboard" class="nav-link {{(request()->is('admin/adminDashboard'))? 'active' : ''}}">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -90,7 +90,7 @@
             </a>
           </li>
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Users
@@ -99,7 +99,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="datapetugassanggar" class="nav-link">
+                <a href="datapetugassanggar" class="nav-link {{(request()->is('admin/datapetugassanggar'))? 'active' : ''}}">
                   <i class="nav-icon fas fa-user"></i>
                   <p>
                     Data Petugas Sanggar
@@ -107,7 +107,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{'/admin/dataanggota'}}" class="nav-link">
+                <a href="{{'/admin/dataanggota'}}" class="nav-link {{(request()->is('admin/dataanggota'))? 'active' : ''}}">
                   <i class="nav-icon fas fa-user"></i>
                   <p>
                     Data Anggota
@@ -115,7 +115,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{'/admin/dataadmin'}}" class="nav-link {{(request()->is('admin/dataadmin'))? 'active' : ''}}">
                   <i class="nav-icon fas fa-user"></i>
                   <p>
                     Data Admin
@@ -237,6 +237,27 @@
     }).then((result) => {
       if (result.isConfirmed) {
         window.location="/admin/delete/"+petugasemail+""
+        Swal.fire(
+          'Berhasil!!',
+          'Data Berhasil Dihapus',
+          'success'
+        )
+      }
+    })
+  })
+  $('.delete_anggota').click(function(){
+    var anggotaemail = $(this).attr('data-id');
+    Swal.fire({
+      title: 'Apakah anda yakin?',
+      text: "Kamu akan menghapus data dengan email "+anggotaemail+" ",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Hapus!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location="/admin/delete_anggota/"+anggotaemail+""
         Swal.fire(
           'Berhasil!!',
           'Data Berhasil Dihapus',

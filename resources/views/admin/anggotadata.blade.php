@@ -11,10 +11,6 @@
                         <div class="col-sm-10">
                             <h3 class="card-title">Data Anggota Sanggar Tari Topeng Mimi Rasinah</h3>
                         </div>
-                        <div class="col">
-                          <center><a href="{{url('admin/tambahpetugassanggar')}}" class="btn btn-success"><ion-icon name="add-circle-outline"></ion-icon>Tambah</a></center>
-                        </div>
-                        
                       </div>
                     </div>
                 <div class="card-body">
@@ -42,14 +38,14 @@
                         <tr>
                           <td>{{$row->email}}</td>  
                           <td>
-                            <img src="#" alt="" style="width: 80px">
+                            <img src="{{asset('fotoanggota/'.$row->image)}}" alt="" style="width: 80px">
                           </td>
                           <td>{{$row->nama}}</td>
                           <td>{{$row->alamat}}</td>
                           <td>{{$row->created_at}}</td>
                           <td> 
-                            <a href="#" class="btn btn-danger btn-sm delete" ><ion-icon name="trash-outline"></ion-icon> <!--outline-->Hapus</a>
-                            <a href="#" class="btn btn-warning btn-sm"><ion-icon name="create-outline"></ion-icon>Edit</a>
+                            <a href="#" class="btn btn-danger btn-sm delete_anggota" data-id="{{$row->email}}" ><ion-icon name="trash-outline"></ion-icon> <!--outline-->Hapus</a>
+                            <a href="/admin/tampildataanggota/{{$row->email}}" class="btn btn-warning btn-sm"><ion-icon name="refresh-outline"></ion-icon>Perbarui Password</a>
                           </td>
                         </tr>
                         @endforeach
